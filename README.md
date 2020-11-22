@@ -49,7 +49,7 @@ For use of bootstrap, add into file styles.css:
 
 In angular.json, to avoid CommonJs warnings in development mode, add **allowedCommonJsDependencies** in the options section for **chart.js**:
 
-```json
+```bash
 "builder": "@angular-devkit/build-angular:browser",
           "options": {
             // other
@@ -63,7 +63,7 @@ In angular.json, to avoid CommonJs warnings in development mode, add **allowedCo
 
 For use of js from bootstrap and jquiry, add into scripts section:
 
-```json
+```bash
 "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
@@ -73,7 +73,7 @@ For use of js from bootstrap and jquiry, add into scripts section:
 
 Before building, set resolveJsonModule to 'true' :
 
-```json
+```bash
 "compilerOptions": {
     // other
     "resolveJsonModule": true,
