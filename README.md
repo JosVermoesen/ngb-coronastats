@@ -1,4 +1,4 @@
-# ngb-coronastats - API demo using Angular
+# ngCorona-stats - API demo using Angular
 
 ## Getting started for users
 
@@ -11,7 +11,7 @@ Live version here: [site](https://coronastats.vsoft.be)
 ## Getting started for developers
 
 - [Install NodeJS](https://nodejs.org/). Hint: eventually install and use [nvm](https://medium.com/@Joachim8675309/installing-node-js-with-nvm-4dc469c977d9) for easy installing and/or switching between node versions
-- Clone this repository: `git clone https://github.com/JosVermoesen/ngb-coronastats`.
+- Clone this repository: `git clone https://github.com/JosVermoesen/ngCorona-stats`.
 - Run `npm install` inside the project root.
 - Run `ng serve` in a terminal from the project root.
 - Profit. :tada:
@@ -49,7 +49,7 @@ For use of bootstrap, add into file styles.css:
 
 In angular.json, to avoid CommonJs warnings in development mode, add **allowedCommonJsDependencies** in the options section for **chart.js**:
 
-```bash
+```json
 "builder": "@angular-devkit/build-angular:browser",
           "options": {
             // other
@@ -63,7 +63,7 @@ In angular.json, to avoid CommonJs warnings in development mode, add **allowedCo
 
 For use of js from bootstrap and jquiry, add into scripts section:
 
-```bash
+```json
 "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
@@ -73,7 +73,7 @@ For use of js from bootstrap and jquiry, add into scripts section:
 
 Before building, set resolveJsonModule to 'true' :
 
-```bash
+```json
 "compilerOptions": {
     // other
     "resolveJsonModule": true,
